@@ -46,8 +46,8 @@ sudo make CC=clang \
     HOSTAR=llvm-ar \
     HOSTLD=ld.lld \
     LLVM_IAS=1 \
-    -j14 KCFLAGS="-O3 -march=alderlake -pipe" \
-    EXTRAVERSION=-gentoo-llvm-O3-lto-full \
+    -j14 KCFLAGS="-O2 -march=native -pipe" \
+    EXTRAVERSION=-gentoo-llvm-lto \
     all
 ```
 
@@ -61,8 +61,8 @@ sudo make install
 
 ### build initramfs
 ```
-sudo dracut --hostonly "/boot/initramfs-$(make EXTRAVERSION=-gentoo-llvm-O3-lto-full kernelrelease).img" \
-    --kver "$(make EXTRAVERSION=-gentoo-llvm-O3-lto-full kernelrelease)"
+sudo dracut --hostonly "/boot/initramfs-$(make EXTRAVERSION=-gentoo-llvm-lto kernelrelease).img" \
+    --kver "$(make EXTRAVERSION=-gentoo-llvm-lto kernelrelease)"
 ```
 
 ### update Grub
