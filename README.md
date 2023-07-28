@@ -15,13 +15,13 @@ sudo make oldconfig
 ```
 
 ### Kernel configuration
-
->  General architecture-dependent options ---><br>
->    Link Time Optimization (LTO) (Clang ThinLTO (EXPERIMENTAL)) ---><br>
->      ( ) None<br>
->      (x) Clang Full LTO (EXPERIMENTAL)<br>
->      ( ) Clang ThinLTO (EXPERIMENTAL)
-    
+```
+  General architecture-dependent options ---><br>
+    Link Time Optimization (LTO) (Clang ThinLTO (EXPERIMENTAL)) ---><br>
+      ( ) None<br>
+      (x) Clang Full LTO (EXPERIMENTAL)<br>
+      ( ) Clang ThinLTO (EXPERIMENTAL)
+```   
     
 ```
 sudo make CC=clang LLVM=1 menuconfig
