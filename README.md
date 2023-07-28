@@ -2,6 +2,11 @@
 
 ### example on gentoo linux
 
+### Install dracut: 
+```
+emerge --ask sys-kernel/dracut
+```
+
 ### change directory to /usr/src/linux
 ```
 cd /usr/src/linux
