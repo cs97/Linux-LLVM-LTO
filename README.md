@@ -16,15 +16,11 @@ sudo make oldconfig
 
 ### Kernel configuration
 
-  General architecture-dependent options --->
-  
-  Link Time Optimization (LTO) (Clang ThinLTO (EXPERIMENTAL)) --->
-  
-    ( ) None
-    
-    (x) Clang Full LTO (EXPERIMENTAL)
-    
-    ( ) Clang ThinLTO (EXPERIMENTAL)
+>  General architecture-dependent options --->
+>    Link Time Optimization (LTO) (Clang ThinLTO (EXPERIMENTAL)) --->
+>      ( ) None
+>      (x) Clang Full LTO (EXPERIMENTAL)
+>      ( ) Clang ThinLTO (EXPERIMENTAL)
     
     
 ```
