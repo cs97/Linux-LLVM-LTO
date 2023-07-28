@@ -14,7 +14,12 @@ sudo cp /usr/src/linux-6.4.4-gentoo/.config .config
 sudo make oldconfig
 ```
 
-CONFIG_LTO_CLANG_FULL=y
+### Kernel configuration
+  General architecture-dependent options --->
+  Link Time Optimization (LTO) (Clang ThinLTO (EXPERIMENTAL)) --->
+    ( ) None
+    (x) Clang Full LTO (EXPERIMENTAL)
+    ( ) Clang ThinLTO (EXPERIMENTAL)
 ```
 sudo make CC=clang LLVM=1 menuconfig
 ```
