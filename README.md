@@ -28,7 +28,11 @@ sudo make CC=clang LLVM=1 menuconfig
 
 ### build Kernel
 ```
-sudo make CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump READELF=llvm-readelf HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld LLVM_IAS=1 -j14 KCFLAGS="-O3 -march=alderlake -pipe" EXTRAVERSION=-gentoo-llvm-O3-lto-full all
+sudo make CC=clang LD=ld.lld AR=llvm-ar NM=llvm-nm STRIP=llvm-strip \
+    OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump READELF=llvm-readelf \
+    HOSTCC=clang HOSTCXX=clang++ HOSTAR=llvm-ar HOSTLD=ld.lld LLVM_IAS=1 \
+    -j14 KCFLAGS="-O3 -march=alderlake -pipe" \
+    EXTRAVERSION=-gentoo-llvm-O3-lto-full all
 ```
 
 ### install Kernel and Modules
