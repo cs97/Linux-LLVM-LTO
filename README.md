@@ -1,5 +1,7 @@
 # Linux-LLVM-O3-LTO_FULL
 
+## example on gentoo linux
+
 ```
 cd /usr/src/linux
 ```
