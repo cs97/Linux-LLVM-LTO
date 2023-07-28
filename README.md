@@ -56,7 +56,8 @@ sudo make install
 
 ### build initramfs
 ```
-sudo dracut --hostonly "/boot/initramfs-$(make EXTRAVERSION=-gentoo-llvm-O3-lto-full kernelrelease).img" --kver "$(make EXTRAVERSION=-gentoo-llvm-O3-lto-full kernelrelease)"
+sudo dracut --hostonly "/boot/initramfs-$(make EXTRAVERSION=-gentoo-llvm-O3-lto-full kernelrelease).img" \
+    --kver "$(make EXTRAVERSION=-gentoo-llvm-O3-lto-full kernelrelease)"
 ```
 
 ### update Grub
