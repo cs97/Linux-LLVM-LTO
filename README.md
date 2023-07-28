@@ -1,4 +1,4 @@
-# Linux-LLVM-O3-LTO_FULL
+# Linux-LLVM-LTO
 
 ### example on gentoo linux
 
