@@ -2,14 +2,14 @@
 
 ### example on gentoo linux
 
+### change directory to /usr/src/linux
 ```
 cd /usr/src/linux
 ```
-
+### copy old config if available
 ```
 sudo cp /usr/src/linux-6.4.4-gentoo/.config .config
 ```
-
 ```
 sudo make oldconfig
 ```
