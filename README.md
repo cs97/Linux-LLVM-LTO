@@ -24,8 +24,8 @@ sudo make oldconfig
 General architecture-dependent options --->
     Link Time Optimization (LTO) (Clang ThinLTO (EXPERIMENTAL)) --->
         ( ) None
-        (x) Clang Full LTO (EXPERIMENTAL)
-        ( ) Clang ThinLTO (EXPERIMENTAL)
+        ( ) Clang Full LTO (EXPERIMENTAL)
+        (x) Clang ThinLTO (EXPERIMENTAL)
 ```   
 ```
 sudo make CC=clang LLVM=1 menuconfig
