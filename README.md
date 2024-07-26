@@ -58,6 +58,9 @@ sudo make modules_install
 ```
 sudo make install
 ```
+```
+sudo cp arch/x86_64/boot/bzImage /boot/vmlinuz-6.9.11-gentoo-llvm-lto-x86_64
+```
 
 ### build initramfs
 ```
